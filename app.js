@@ -7,3 +7,5 @@ const html = `
   <i class="for fa-trash-alt delete"></i>
   </li>
 `;
+list.innerHTML += html;
+};
