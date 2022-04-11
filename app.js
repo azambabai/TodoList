@@ -9,3 +9,6 @@ const html = `
 `;
 list.innerHTML += html;
 };
+addForm.addEventListener( 'submit' , e =>{
+   e.preventDefault();
+const todo = addForm.add.value.trim();
