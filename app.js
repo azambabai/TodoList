@@ -12,3 +12,9 @@ list.innerHTML += html;
 addForm.addEventListener( 'submit' , e =>{
    e.preventDefault();
 const todo = addForm.add.value.trim();
+// console.log(todo);
+   if(todo.lenght){
+    generaitor(todo);
+    addForm.reset();
+   }
+});
