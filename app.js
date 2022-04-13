@@ -29,3 +29,5 @@ list.addEventListener('click' , e => {
 const filterTodos = (term) => {
 console.log(list.children);
 }
+
+//keyup event
