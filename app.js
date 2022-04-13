@@ -33,3 +33,5 @@ console.log(list.children);
 //keyup event
 search.addEventListener('keyup' , () => {
 const term = search.value.trim();
+filterTodos(term);
+})
