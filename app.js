@@ -28,7 +28,6 @@ list.addEventListener('click' , e => {
 
 const filterTodos = (term) => {
 // console.log(list.children);
-
    Array.from(list.children) 
    .filter ((todo) => !todo.textContent.toLowerCase().includes(term))
    // console.log(todo.textContent);
