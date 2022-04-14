@@ -27,8 +27,18 @@ list.addEventListener('click' , e => {
 })
 
 const filterTodos = (term) => {
-console.log(list.children);
-}
+// console.log(list.children);
+
+   Array.from(list.children) 
+   .filter ((todo) => !todo.textContent.toLowerCase().includes(term))
+   // console.log(todo.textContent);
+   // return true;
+   .forEach((todo) => todo.classList.add('filtered'));
+
+   Array.from(list.children) 
+   .filter ((todo) => todo.textContent.toLowerCase().includes(term))
+   .forEach((todo) => todo.classList.remove('filtered'));
+};
 
 //keyup event
 search.addEventListener('keyup' , () => {
